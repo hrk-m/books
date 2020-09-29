@@ -11,6 +11,9 @@
     "collapsible-chapters",
     "hide-published-with"
   ],
+  "pluginsConfig": {
+    "collapsible-chapters": {}
+  },
   "styles": {
     "website": "styles/website.css"
   }

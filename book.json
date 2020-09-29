@@ -2,7 +2,7 @@
   "title": "GitBook Tutorial",
   "description": "This is a gitbook example",
   "language": "ja",
-  "root": "./docs",
+  "root": "./books",
   "plugins": [
     "-sharing",
     "theme-api",

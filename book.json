@@ -1,0 +1,16 @@
+{
+  "title": "GitBook Tutorial",
+  "description": "This is a gitbook example",
+  "language": "ja",
+  "plugins": [
+    "-sharing",
+    "theme-api",
+    "copy-code-button",
+    "anchors",
+    "collapsible-chapters",
+    "hide-published-with"
+  ],
+  "styles": {
+    "website": "styles/website.css"
+  }
+}

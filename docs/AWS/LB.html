@@ -194,12 +194,284 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="ec2-&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x69CB;&#x7BC9;&#x624B;&#x9806;"><a name="ec2-&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x69CB;&#x7BC9;&#x624B;&#x9806;" class="plugin-anchor" href="#ec2-&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x69CB;&#x7BC9;&#x624B;&#x9806;"><i class="fa fa-link" aria-hidden="true"></i></a>EC2 &#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x69CB;&#x7BC9;&#x624B;&#x9806;</h2>
+                                <h2 id="ec2-&#x30B5;&#x30FC;&#x30D0;&#x3092;-2-&#x53F0;&#x7ACB;&#x3061;&#x4E0A;&#x3052;&#x3001;elb-&#x3092;&#x4F7F;&#x3063;&#x3066;&#x8CA0;&#x8377;&#x5206;&#x6563;&#x3092;&#x3059;&#x308B;&#x69CB;&#x7BC9;"><a name="ec2-&#x30B5;&#x30FC;&#x30D0;&#x3092;-2-&#x53F0;&#x7ACB;&#x3061;&#x4E0A;&#x3052;&#x3001;elb-&#x3092;&#x4F7F;&#x3063;&#x3066;&#x8CA0;&#x8377;&#x5206;&#x6563;&#x3092;&#x3059;&#x308B;&#x69CB;&#x7BC9;" class="plugin-anchor" href="#ec2-&#x30B5;&#x30FC;&#x30D0;&#x3092;-2-&#x53F0;&#x7ACB;&#x3061;&#x4E0A;&#x3052;&#x3001;elb-&#x3092;&#x4F7F;&#x3063;&#x3066;&#x8CA0;&#x8377;&#x5206;&#x6563;&#x3092;&#x3059;&#x308B;&#x69CB;&#x7BC9;"><i class="fa fa-link" aria-hidden="true"></i></a>EC2 &#x30B5;&#x30FC;&#x30D0;&#x3092; 2 &#x53F0;&#x7ACB;&#x3061;&#x4E0A;&#x3052;&#x3001;ELB &#x3092;&#x4F7F;&#x3063;&#x3066;&#x8CA0;&#x8377;&#x5206;&#x6563;&#x3092;&#x3059;&#x308B;(&#x69CB;&#x7BC9;)</h2>
 <h1 id="ec2-&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x30D0;&#x30E9;&#x30F3;&#x30B5;&#x30FC;"><a name="ec2-&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x30D0;&#x30E9;&#x30F3;&#x30B5;&#x30FC;" class="plugin-anchor" href="#ec2-&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x30D0;&#x30E9;&#x30F3;&#x30B5;&#x30FC;"><i class="fa fa-link" aria-hidden="true"></i></a>EC2 #&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x30D0;&#x30E9;&#x30F3;&#x30B5;&#x30FC;</h1>
-<hr>
+<h1 id="&#x306F;&#x3058;&#x3081;&#x306B;"><a name="&#x306F;&#x3058;&#x3081;&#x306B;" class="plugin-anchor" href="#&#x306F;&#x3058;&#x3081;&#x306B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x306F;&#x3058;&#x3081;&#x306B;</h1>
+<ul>
+<li>&#x4ECA;&#x307E;&#x3067;&#x4F55;&#x5EA6;&#x304B; EC2 &#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x3092;&#x69CB;&#x7BC9;&#x3057;&#x3066;&#x304D;&#x305F;&#x304C;&#x30E1;&#x30E2;&#x3068;&#x3057;&#x3066;&#x6B8B;&#x3057;&#x3066;&#x306A;&#x304B;&#x3063;&#x305F;&#x306E;&#x3067;&#x3001;&#x6539;&#x3081;&#x3066;&#x30E1;&#x30E2;&#x3068;&#x3057;&#x3066;&#x69CB;&#x7BC9;&#x624B;&#x9806;&#x3092;&#x30E1;&#x30E2;&#x3092;&#x6B8B;&#x3059;</li>
+</ul>
+<h1 id="&#x5168;&#x4F53;&#x69CB;&#x7BC9;&#x56F3;&#x6982;&#x8981;"><a name="&#x5168;&#x4F53;&#x69CB;&#x7BC9;&#x56F3;&#x6982;&#x8981;" class="plugin-anchor" href="#&#x5168;&#x4F53;&#x69CB;&#x7BC9;&#x56F3;&#x6982;&#x8981;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5168;&#x4F53;&#x69CB;&#x7BC9;&#x56F3;(&#x6982;&#x8981;)</h1>
+<ul>
+<li>LB &#x306E;&#x69CB;&#x7BC9;&#x74B0;&#x5883;&#x3092;&#x8A18;&#x8F09;&#x3057;&#x3066;&#x3044;&#x308B;&#x306E;&#x3067; RDS &#x306F;&#x7D10;&#x4ED8;&#x3051;&#x306A;&#x3044;</li>
+</ul>
+<p><img src="LB/all.png" width="600px"><br></p>
+<ul>
+<li><a href="https://app.diagrams.net/#G1fXJ9LZZGK4IJCbiDJGX7T5qcHoioY4KZ" target="_blank">&#x6982;&#x8981;&#x56F3;&#x30EA;&#x30F3;&#x30AF;(drowio)</a></li>
+</ul>
+<h1 id="&#x76EE;&#x6B21;&#x69CB;&#x7BC9;&#x624B;&#x9806;&#x306E;&#x6D41;&#x308C;"><a name="&#x76EE;&#x6B21;&#x69CB;&#x7BC9;&#x624B;&#x9806;&#x306E;&#x6D41;&#x308C;" class="plugin-anchor" href="#&#x76EE;&#x6B21;&#x69CB;&#x7BC9;&#x624B;&#x9806;&#x306E;&#x6D41;&#x308C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x76EE;&#x6B21;(&#x69CB;&#x7BC9;&#x624B;&#x9806;&#x306E;&#x6D41;&#x308C;)</h1>
 <ol>
-<li>s</li>
+<li>VPC &#x306E;&#x4F5C;&#x6210;</li>
+<li>&#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8;&#x306E;&#x4F5C;&#x6210;</li>
+<li>&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x30B2;&#x30FC;&#x30C8;&#x30A6;&#x30A7;&#x30A4;&#x3092;&#x4F5C;&#x6210;</li>
+<li>&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x30B2;&#x30FC;&#x30C8;&#x30A6;&#x30A7;&#x30A4;&#x3078;&#x306E;&#x30EB;&#x30FC;&#x30C8;&#x3092;&#x8FFD;&#x52A0;</li>
+<li>&#x30ED;&#x30FC;&#x30C9;&#x30D0;&#x30E9;&#x30F3;&#x30B5;&#x30FC;&#x306E;&#x4F5C;&#x6210;</li>
+<li>EC2 &#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x4F5C;&#x6210;</li>
+<li>EC2 &#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x5FC5;&#x8981;&#x306A;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</li>
+<li>2 &#x3064;&#x76EE;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</li>
+<li>&#x30BF;&#x30FC;&#x30B2;&#x30C3;&#x30C8;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x306B;&#xFF12;&#x53F0;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x3066;&#x3044;&#x304F;</li>
 </ol>
+<h1 id="1-vpc-&#x306E;&#x4F5C;&#x6210;"><a name="1-vpc-&#x306E;&#x4F5C;&#x6210;" class="plugin-anchor" href="#1-vpc-&#x306E;&#x4F5C;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>1. VPC &#x306E;&#x4F5C;&#x6210;</h1>
+<ul>
+<li>VPC &#x4F5C;&#x6210;&#x306E;&#x30DC;&#x30BF;&#x30F3;&#x3092;&#x62BC;&#x3059;</li>
+</ul>
+<p><img src="LB/lb_01.png" width="600px"><br></p>
+<h2 id="vpc-&#x540D;&#x3068;-ipv4-cidr-&#x30D6;&#x30ED;&#x30C3;&#x30AF;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;"><a name="vpc-&#x540D;&#x3068;-ipv4-cidr-&#x30D6;&#x30ED;&#x30C3;&#x30AF;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;" class="plugin-anchor" href="#vpc-&#x540D;&#x3068;-ipv4-cidr-&#x30D6;&#x30ED;&#x30C3;&#x30AF;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;"><i class="fa fa-link" aria-hidden="true"></i></a>VPC &#x540D;&#x3068; IPv4 CIDR &#x30D6;&#x30ED;&#x30C3;&#x30AF;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;</h2>
+<ul>
+<li>VPC &#x540D;: VPC &#x306E;&#x540D;&#x524D;&#x3000;(&#x56F3;: test-vpc)</li>
+<li><p>IPv4 CIDR &#x30D6;&#x30ED;&#x30C3;&#x30AF;: 10.0.0.0/16</p>
+<p><img src="LB/lb_02.png" width="600px"><br></p>
+</li>
+</ul>
+<h1 id="2-&#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8;&#x306E;&#x4F5C;&#x6210;"><a name="2-&#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8;&#x306E;&#x4F5C;&#x6210;" class="plugin-anchor" href="#2-&#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8;&#x306E;&#x4F5C;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8;&#x306E;&#x4F5C;&#x6210;</h1>
+<ul>
+<li>&#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8; &#x4F5C;&#x6210;&#x306E;&#x30DC;&#x30BF;&#x30F3;&#x3092;&#x62BC;&#x3059;</li>
+</ul>
+<p><img src="LB/subnet01.png" width="600px"><br></p>
+<h2 id="&#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8;&#x3092;&#x4E8C;&#x3064;&#x4F5C;&#x6210;"><a name="&#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8;&#x3092;&#x4E8C;&#x3064;&#x4F5C;&#x6210;" class="plugin-anchor" href="#&#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8;&#x3092;&#x4E8C;&#x3064;&#x4F5C;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8;&#x3092;&#x4E8C;&#x3064;&#x4F5C;&#x6210;</h2>
+<h2 id="lb-&#x3067;-2-&#x3064;&#x306E;&#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8;&#x306E;&#x5207;&#x308A;&#x66FF;&#x3048;&#x3092;&#x884C;&#x3046;&#x305F;&#x3081;"><a name="lb-&#x3067;-2-&#x3064;&#x306E;&#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8;&#x306E;&#x5207;&#x308A;&#x66FF;&#x3048;&#x3092;&#x884C;&#x3046;&#x305F;&#x3081;" class="plugin-anchor" href="#lb-&#x3067;-2-&#x3064;&#x306E;&#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8;&#x306E;&#x5207;&#x308A;&#x66FF;&#x3048;&#x3092;&#x884C;&#x3046;&#x305F;&#x3081;"><i class="fa fa-link" aria-hidden="true"></i></a>LB &#x3067; 2 &#x3064;&#x306E;&#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8;&#x306E;&#x5207;&#x308A;&#x66FF;&#x3048;&#x3092;&#x884C;&#x3046;&#x305F;&#x3081;</h2>
+<h3 id="1-&#x3064;&#x76EE;&#x306E;&#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8;"><a name="1-&#x3064;&#x76EE;&#x306E;&#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8;" class="plugin-anchor" href="#1-&#x3064;&#x76EE;&#x306E;&#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8;"><i class="fa fa-link" aria-hidden="true"></i></a>1 &#x3064;&#x76EE;&#x306E;&#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8;</h3>
+<ul>
+<li>&#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8;&#x540D;: testsub-pub01</li>
+<li>IPv4 CIDR &#x30D6;&#x30ED;&#x30C3;&#x30AF;: 10.0.0.0/24</li>
+<li>VPC: &#xFF11;&#x3067;&#x4F5C;&#x6210;&#x3057;&#x305F; VPC &#x3092;&#x9078;&#x629E;</li>
+<li>&#x30A2;&#x30D9;&#x30A4;&#x30E9;&#x30D3;&#x30EA;&#x30C6;&#x30A3;&#x30FC;&#x30BE;&#x30FC;&#x30F3;: &#x4F7F;&#x3044;&#x305F;&#x3044;&#x3082;&#x306E;&#x3092;&#x4F7F;&#x7528;</li>
+</ul>
+<p><img src="LB/subnet02.png" width="600px"><br></p>
+<h3 id="2-&#x3064;&#x76EE;&#x306E;&#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8;"><a name="2-&#x3064;&#x76EE;&#x306E;&#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8;" class="plugin-anchor" href="#2-&#x3064;&#x76EE;&#x306E;&#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8;"><i class="fa fa-link" aria-hidden="true"></i></a>2 &#x3064;&#x76EE;&#x306E;&#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8;</h3>
+<ul>
+<li>&#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8;&#x540D;: testsub-pub02</li>
+<li>IPv4 CIDR &#x30D6;&#x30ED;&#x30C3;&#x30AF;: 10.0.1.0/24</li>
+<li>VPC: &#xFF11;&#x3067;&#x4F5C;&#x6210;&#x3057;&#x305F; VPC &#x3092;&#x9078;&#x629E;</li>
+<li>&#x30A2;&#x30D9;&#x30A4;&#x30E9;&#x30D3;&#x30EA;&#x30C6;&#x30A3;&#x30FC;&#x30BE;&#x30FC;&#x30F3;: &#x4F7F;&#x3044;&#x305F;&#x3044;&#x3082;&#x306E;&#x3092;&#x4F7F;&#x7528;</li>
+</ul>
+<p><img src="LB/subnet03.png" width="600px"><br></p>
+<p>&#x203B; IPv4 CIDR &#x30D6;&#x30ED;&#x30C3;&#x30AF; &#x306F;&#x91CD;&#x8907;&#x3059;&#x308B; IP &#x3092;&#x6307;&#x5B9A;&#x3067;&#x304D;&#x306A;&#x3044;</p>
+<h1 id="3-&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x30B2;&#x30FC;&#x30C8;&#x30A6;&#x30A7;&#x30A4;&#x3092;&#x4F5C;&#x6210;"><a name="3-&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x30B2;&#x30FC;&#x30C8;&#x30A6;&#x30A7;&#x30A4;&#x3092;&#x4F5C;&#x6210;" class="plugin-anchor" href="#3-&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x30B2;&#x30FC;&#x30C8;&#x30A6;&#x30A7;&#x30A4;&#x3092;&#x4F5C;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x30B2;&#x30FC;&#x30C8;&#x30A6;&#x30A7;&#x30A4;&#x3092;&#x4F5C;&#x6210;</h1>
+<ul>
+<li>&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x30B2;&#x30FC;&#x30C8;&#x30A6;&#x30A7;&#x30A4; &#x4F5C;&#x6210;&#x306E;&#x30DC;&#x30BF;&#x30F3;&#x3092;&#x62BC;&#x3059;</li>
+</ul>
+<p><img src="LB/ig01.png" width="600px"><br></p>
+<h2 id="&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x30B2;&#x30FC;&#x30C8;&#x30A6;&#x30A7;&#x30A4;&#x540D;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;"><a name="&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x30B2;&#x30FC;&#x30C8;&#x30A6;&#x30A7;&#x30A4;&#x540D;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;" class="plugin-anchor" href="#&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x30B2;&#x30FC;&#x30C8;&#x30A6;&#x30A7;&#x30A4;&#x540D;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x30B2;&#x30FC;&#x30C8;&#x30A6;&#x30A7;&#x30A4;&#x540D;&#x3092;&#x8A2D;&#x5B9A;&#x3059;&#x308B;</h2>
+<p><img src="LB/ig02.png" width="600px"><br></p>
+<h2 id="&#x4F5C;&#x6210;&#x5F8C;&#x3001;1-&#x3067;&#x4F5C;&#x6210;&#x3057;&#x305F;-vpc-&#x306B;&#x30A2;&#x30BF;&#x30C3;&#x30C1;&#x3059;&#x308B;"><a name="&#x4F5C;&#x6210;&#x5F8C;&#x3001;1-&#x3067;&#x4F5C;&#x6210;&#x3057;&#x305F;-vpc-&#x306B;&#x30A2;&#x30BF;&#x30C3;&#x30C1;&#x3059;&#x308B;" class="plugin-anchor" href="#&#x4F5C;&#x6210;&#x5F8C;&#x3001;1-&#x3067;&#x4F5C;&#x6210;&#x3057;&#x305F;-vpc-&#x306B;&#x30A2;&#x30BF;&#x30C3;&#x30C1;&#x3059;&#x308B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F5C;&#x6210;&#x5F8C;&#x3001;1 &#x3067;&#x4F5C;&#x6210;&#x3057;&#x305F; VPC &#x306B;&#x30A2;&#x30BF;&#x30C3;&#x30C1;&#x3059;&#x308B;</h2>
+<ul>
+<li>&#x53F3;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3067; VPC &#x306B;&#x30A2;&#x30BF;&#x30C3;&#x30C1;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;</li>
+</ul>
+<p><img src="LB/ig03.png" width="600px"><br></p>
+<ul>
+<li>&#x4F7F;&#x7528;&#x53EF;&#x80FD;&#x306A; VPC &#x306B; 1 &#x3067;&#x4F5C;&#x6210;&#x3057;&#x305F; VPC &#x3092;&#x9078;&#x629E;&#x3057;&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x30B2;&#x30FC;&#x30C8;&#x30A6;&#x30A7;&#x30A4;&#x306E;&#x30A2;&#x30BF;&#x30C3;&#x30C1;&#x30DC;&#x30BF;&#x30F3;&#x3092;&#x62BC;&#x3059;<br>
+&#x3053;&#x308C;&#x3067; vpc &#x306B;&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x30B2;&#x30FC;&#x30C8;&#x30A6;&#x30A7;&#x30A4;&#x306E;&#x30A2;&#x30BF;&#x30C3;&#x30C1;&#x304C;&#x5B8C;&#x4E86;</li>
+</ul>
+<p><img src="LB/ig04.png" width="600px"><br></p>
+<h1 id="4-&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x30B2;&#x30FC;&#x30C8;&#x30A6;&#x30A7;&#x30A4;&#x3078;&#x306E;&#x30EB;&#x30FC;&#x30C8;&#x3092;&#x8FFD;&#x52A0;"><a name="4-&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x30B2;&#x30FC;&#x30C8;&#x30A6;&#x30A7;&#x30A4;&#x3078;&#x306E;&#x30EB;&#x30FC;&#x30C8;&#x3092;&#x8FFD;&#x52A0;" class="plugin-anchor" href="#4-&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x30B2;&#x30FC;&#x30C8;&#x30A6;&#x30A7;&#x30A4;&#x3078;&#x306E;&#x30EB;&#x30FC;&#x30C8;&#x3092;&#x8FFD;&#x52A0;"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x30B2;&#x30FC;&#x30C8;&#x30A6;&#x30A7;&#x30A4;&#x3078;&#x306E;&#x30EB;&#x30FC;&#x30C8;&#x3092;&#x8FFD;&#x52A0;</h1>
+<ul>
+<li>3 &#x3067;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8;&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;&#x7D10;&#x3065;&#x3044;&#x3066;&#x3044;&#x308B;&#x30EB;&#x30FC;&#x30C8;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;</li>
+</ul>
+<p><img src="LB/ig-root01.png" width="600px"><br></p>
+<ul>
+<li>&#x30EB;&#x30FC;&#x30C8;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x753B;&#x9762;&#x306B;&#x884C;&#x304D;&#x3001;&#x30EB;&#x30FC;&#x30C8;&#x306E;&#x7DE8;&#x96C6;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;(&#x3053;&#x3053;&#x3067;&#x30CD;&#x30C3;&#x30C8;&#x306B;&#x3064;&#x306A;&#x304C;&#x308B;&#x3088;&#x3046;&#x306B;&#x3059;&#x308B;)</li>
+</ul>
+<p><img src="LB/ig-root02.png" width="600px"><br></p>
+<h2 id="&#x30EB;&#x30FC;&#x30C8;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306B;&#x8FFD;&#x52A0;"><a name="&#x30EB;&#x30FC;&#x30C8;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306B;&#x8FFD;&#x52A0;" class="plugin-anchor" href="#&#x30EB;&#x30FC;&#x30C8;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306B;&#x8FFD;&#x52A0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x30EB;&#x30FC;&#x30C8;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306B;&#x8FFD;&#x52A0;</h2>
+<ul>
+<li>&#x9001;&#x4FE1;&#x5148;: 0.0.0.0/0</li>
+<li>&#x30BF;&#x30FC;&#x30B2;&#x30C3;&#x30C8;: 4 &#x3067;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x30B2;&#x30FC;&#x30C8;&#x30A6;&#x30A7;&#x30A4;&#x3092;&#x9078;&#x629E;</li>
+</ul>
+<p><img src="LB/ig-root03.png" width="600px"><br></p>
+<p>&#x203B; &#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x30B2;&#x30FC;&#x30C8;&#x30A6;&#x30A7;&#x30A4;&#x3078;&#x306E;&#x30EB;&#x30FC;&#x30C8;&#x3092;&#x8FFD;&#x52A0;&#x306F;&#x4F5C;&#x6210;&#x3057;&#x305F; 2 &#x3064;&#x306E;&#x3069;&#x308C;&#x304B; 1 &#x3064;&#x3060;&#x3051;&#x3067; OK</p>
+<h1 id="5-&#x30ED;&#x30FC;&#x30C9;&#x30D0;&#x30E9;&#x30F3;&#x30B5;&#x30FC;&#x306E;&#x4F5C;&#x6210;"><a name="5-&#x30ED;&#x30FC;&#x30C9;&#x30D0;&#x30E9;&#x30F3;&#x30B5;&#x30FC;&#x306E;&#x4F5C;&#x6210;" class="plugin-anchor" href="#5-&#x30ED;&#x30FC;&#x30C9;&#x30D0;&#x30E9;&#x30F3;&#x30B5;&#x30FC;&#x306E;&#x4F5C;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>5. &#x30ED;&#x30FC;&#x30C9;&#x30D0;&#x30E9;&#x30F3;&#x30B5;&#x30FC;&#x306E;&#x4F5C;&#x6210;</h1>
+<ul>
+<li>&#x30ED;&#x30FC;&#x30C9;&#x30D0;&#x30E9;&#x30F3;&#x30B5;&#x30FC;&#x306E;&#x4F5C;&#x6210;&#x30DC;&#x30BF;&#x30F3;&#x3092;&#x62BC;&#x3059;</li>
+</ul>
+<p><img src="LB/lb01.png" width="600px"><br></p>
+<h2 id="&#x30ED;&#x30FC;&#x30C9;&#x30D0;&#x30E9;&#x30F3;&#x30B5;&#x30FC;&#x306E;&#x8A2D;&#x5B9A;"><a name="&#x30ED;&#x30FC;&#x30C9;&#x30D0;&#x30E9;&#x30F3;&#x30B5;&#x30FC;&#x306E;&#x8A2D;&#x5B9A;" class="plugin-anchor" href="#&#x30ED;&#x30FC;&#x30C9;&#x30D0;&#x30E9;&#x30F3;&#x30B5;&#x30FC;&#x306E;&#x8A2D;&#x5B9A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x30ED;&#x30FC;&#x30C9;&#x30D0;&#x30E9;&#x30F3;&#x30B5;&#x30FC;&#x306E;&#x8A2D;&#x5B9A;</h2>
+<ul>
+<li>&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x30D0;&#x30E9;&#x30F3;&#x30B5;&#x30FC;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;</li>
+</ul>
+<p><img src="LB/lb02.png" width="600px"><br></p>
+<ul>
+<li>&#x540D;&#x524D;: &#x30ED;&#x30FC;&#x30C9;&#x30D0;&#x30E9;&#x30F3;&#x30B5;&#x30FC;&#x540D;(&#x56F3;: test-lb)</li>
+<li>&#x30B9;&#x30AD;&#x30FC;&#x30E0;: &#x5916;&#x90E8;&#x306B;&#x516C;&#x958B;&#x3059;&#x308B;&#x304B;&#x3069;&#x3046;&#x304B;(&#x30A4;&#x30F3;&#x30BF;&#x30FC;&#x30CD;&#x30C3;&#x30C8;&#x5411;&#x3051;)</li>
+<li>&#x30A2;&#x30D9;&#x30A4;&#x30E9;&#x30D3;&#x30EA;&#x30C6;&#x30A3;&#x30FC;&#x30BE;&#x30FC;&#x30F3;: 1 &#x3067;&#x4F5C;&#x6210;&#x3057;&#x305F; VPC &#x3068; 2 &#x3067;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8;&#x3092;&#x9078;&#x629E;</li>
+</ul>
+<p><img src="LB/lb03.png" width="600px"><br></p>
+<ul>
+<li>&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;&#x8A2D;&#x5B9A;&#x306E;&#x69CB;&#x6210;&#x306E;&#x30BF;&#x30D6;&#x306F;&#x30B9;&#x30AD;&#x30C3;&#x30D7;</li>
+</ul>
+<h2 id="&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x306E;&#x8A2D;&#x5B9A;"><a name="&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x306E;&#x8A2D;&#x5B9A;" class="plugin-anchor" href="#&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x306E;&#x8A2D;&#x5B9A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x306E;&#x8A2D;&#x5B9A;</h2>
+<ul>
+<li><p>&#x65B0;&#x898F;&#x4F5C;&#x6210;&#x3092;&#x9078;&#x629E;(&#x65E2;&#x5B58;&#x306E;&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x5834;&#x5408;&#x306F;&#x65E2;&#x5B58;&#x306E;&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x3092;&#x9078;&#x629E;)</p>
+</li>
+<li><p>&#x203B; &#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x306E;&#x8A2D;&#x5B9A;&#x3067;&#x3001;&#x7279;&#x5B9A;&#x306E;&#x901A;&#x4FE1;&#x306E;&#x307F;&#x3092;&#x901A;&#x3059;&#x3088;&#x3046;&#x306B;&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x308B;</p>
+</li>
+</ul>
+<p><img src="LB/lb04.png" width="600px"><br></p>
+<h2 id="&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x8A2D;&#x5B9A;&#x306F;&#x30B9;&#x30AD;&#x30C3;&#x30D7;"><a name="&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x8A2D;&#x5B9A;&#x306F;&#x30B9;&#x30AD;&#x30C3;&#x30D7;" class="plugin-anchor" href="#&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x8A2D;&#x5B9A;&#x306F;&#x30B9;&#x30AD;&#x30C3;&#x30D7;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x8A2D;&#x5B9A;&#x306F;&#x30B9;&#x30AD;&#x30C3;&#x30D7;</h2>
+<ul>
+<li>&#x30DD;&#x30FC;&#x30C8;: &#x30D8;&#x30EB;&#x30B9;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x306E;&#x6642;&#x3060;&#x3051;&#x5225;&#x306E;&#x30DD;&#x30FC;&#x30C8;&#x756A;&#x53F7;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x305F;&#x3044;&#x6642;&#x5229;&#x7528;&#x3059;&#x308B;</li>
+<li>&#x6B63;&#x5E38;&#x306E;&#x3057;&#x304D;&#x3044;&#x5024;: &#x4F55;&#x56DE;&#x30D8;&#x30EB;&#x30B9;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x306E; URL &#x306B;&#x5BFE;&#x3059;&#x308B;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x304C;&#x6210;&#x529F;&#x3059;&#x308B;&#x304B;&#x3092;&#x8868;&#x3059;&#x6570;&#x5B57;</li>
+<li>&#x975E;&#x6B63;&#x5E38;&#x306E;&#x3057;&#x304D;&#x3044;&#x5024;: &#x4F55;&#x56DE;&#x30D8;&#x30EB;&#x30B9;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x306E; URL &#x306B;&#x5BFE;&#x3059;&#x308B;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x304C;&#x5931;&#x6557;&#x3059;&#x308B;&#x304B;&#x3092;&#x8868;&#x3059;&#x6570;&#x5B57;</li>
+<li>&#x30BF;&#x30A4;&#x30E0;&#x30A2;&#x30A6;&#x30C8;: &#x4F55;&#x79D2;&#x9593;&#x5FDC;&#x7B54;&#x304C;&#x306A;&#x304B;&#x3063;&#x305F;&#x3089;&#x30BF;&#x30A4;&#x30E0;&#x30A2;&#x30A6;&#x30C8;&#x3068;&#x307F;&#x306A;&#x3059;&#x304B;&#x306E;&#x5024;</li>
+<li>&#x9593;&#x9694;: &#x4F55;&#x79D2;&#x9593;&#x9694;&#x3067;&#x30D8;&#x30EB;&#x30B9;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3092;&#x884C;&#x3046;&#x304B;</li>
+<li>&#x6210;&#x529F;&#x30B3;&#x30FC;&#x30C9;: &#x6210;&#x529F;&#x30EC;&#x30B9;&#x30DD;&#x30F3;&#x30B9;&#x306E;&#x30B9;&#x30C6;&#x30FC;&#x30BF;&#x30B9;&#x30B3;&#x30FC;&#x30C9;</li>
+</ul>
+<p><img src="LB/lb05.png" width="600px"><br></p>
+<ul>
+<li>&#x30BF;&#x30FC;&#x30B2;&#x30C3;&#x30C8;&#x306E;&#x767B;&#x9332;&#x3001;&#x78BA;&#x8A8D;&#x3068;&#x9032;&#x307F; &#x4F5C;&#x6210;&#x3059;&#x308B;</li>
+</ul>
+<h1 id="6-ec2-&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x4F5C;&#x6210;"><a name="6-ec2-&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x4F5C;&#x6210;" class="plugin-anchor" href="#6-ec2-&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x4F5C;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>6. EC2 &#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x4F5C;&#x6210;</h1>
+<ul>
+<li>&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x4F5C;&#x6210;&#x30DC;&#x30BF;&#x30F3;&#x3092;&#x62BC;&#x3059;</li>
+</ul>
+<p><img src="LB/ec201.png" width="600px"><br></p>
+<ul>
+<li><code>Amazon Linux 2 AMI (HVM), SSD Volume Type</code> &#x3092;&#x9078;&#x629E;</li>
+</ul>
+<p><img src="LB/ec202.png" width="600px"><br></p>
+<ul>
+<li><code>Amazon Linux 2 AMI (HVM), SSD Volume Type</code> &#x3092;&#x9078;&#x629E;</li>
+</ul>
+<p><img src="LB/ec202.png" width="600px"><br></p>
+<h3 id="&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x30BF;&#x30A4;&#x30D7;&#x3092;&#x9078;&#x629E;"><a name="&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x30BF;&#x30A4;&#x30D7;&#x3092;&#x9078;&#x629E;" class="plugin-anchor" href="#&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x30BF;&#x30A4;&#x30D7;&#x3092;&#x9078;&#x629E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x30BF;&#x30A4;&#x30D7;&#x3092;&#x9078;&#x629E;</h3>
+<ul>
+<li>&#x5229;&#x7528;&#x3057;&#x305F;&#x3044;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x30BF;&#x30A4;&#x30D7;&#x3092;&#x9078;&#x629E;</li>
+<li>&#x6B21;&#x306E;&#x30B9;&#x30C6;&#x30C3;&#x30D7;&#x3078;&#x9078;&#x629E;</li>
+</ul>
+<p><img src="LB/ec203.png" width="600px"><br></p>
+<h2 id="&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x8A73;&#x7D30;&#x306E;&#x8A2D;&#x5B9A;"><a name="&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x8A73;&#x7D30;&#x306E;&#x8A2D;&#x5B9A;" class="plugin-anchor" href="#&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x8A73;&#x7D30;&#x306E;&#x8A2D;&#x5B9A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x8A73;&#x7D30;&#x306E;&#x8A2D;&#x5B9A;</h2>
+<ul>
+<li>&#x30CD;&#x30C3;&#x30C8;&#x30EF;&#x30FC;&#x30AF;: 1 &#x3067;&#x4F5C;&#x6210;&#x3057;&#x305F; vpc &#x3092;&#x9078;&#x629E;</li>
+<li>&#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8;: vpc &#x4F5C;&#x6210;&#x306E;&#x6642;&#x306B;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8;&#x3092;&#x3069;&#x308C;&#x304B;&#x4E00;&#x3064;&#x9078;&#x629E;&#x3059;&#x308B;(&#x56F3;: testsub-pub01)</li>
+<li>&#x81EA;&#x52D5;&#x5272;&#x308A;&#x5F53;&#x3066;&#x30D1;&#x30D6;&#x30EA;&#x30C3;&#x30AF; IP: ssh &#x3067;&#x30ED;&#x30B0;&#x30A4;&#x30F3;&#x3059;&#x308B;&#x6642;&#x306B;&#x5FC5;&#x8981;&#x306A;&#x306E;&#x3067;&#x6709;&#x52B9;&#x5316;&#x306B;&#x3059;&#x308B;</li>
+<li>&#x6B21;&#x3078;&#x306E;&#x30B9;&#x30C6;&#x30C3;&#x30D7;&#x3078;&#x9078;&#x629E;</li>
+</ul>
+<p><img src="LB/ec204.png" width="600px"><br></p>
+<ul>
+<li>&#x30B9;&#x30C6;&#x30C3;&#x30D7; 4&#x3001;5 &#x306F;&#x7279;&#x306B;&#x8A2D;&#x5B9A;&#x304C;&#x306A;&#x3044;&#x306E;&#x3067;&#x30B9;&#x30AD;&#x30C3;&#x30D7;&#x3059;&#x308B;</li>
+</ul>
+<h2 id="&#x30B9;&#x30C6;&#x30C3;&#x30D7;-6-&#x306E;-&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x306E;&#x8A2D;&#x5B9A;"><a name="&#x30B9;&#x30C6;&#x30C3;&#x30D7;-6-&#x306E;-&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x306E;&#x8A2D;&#x5B9A;" class="plugin-anchor" href="#&#x30B9;&#x30C6;&#x30C3;&#x30D7;-6-&#x306E;-&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x306E;&#x8A2D;&#x5B9A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x30B9;&#x30C6;&#x30C3;&#x30D7; 6 &#x306E; &#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x306E;&#x8A2D;&#x5B9A;</h2>
+<ul>
+<li>&#x65B0;&#x3057;&#x3044;&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x3092;&#x4F5C;&#x6210;</li>
+<li><p>HTTP &#x306E; 80 &#x756A;&#x30DD;&#x30FC;&#x30C8;&#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;</p>
+</li>
+<li><p>&#x203B;SSHIP &#x306F;<code>MyIp&#x30A2;&#x30C9;&#x30EC;&#x30B9;</code>&#x3067;&#x3057;&#x305F;&#x65B9;&#x304C;&#x3044;&#x3044;(&#x30B5;&#x30FC;&#x30D0;&#x306B;&#x5916;&#x90E8;&#x304B;&#x3089;&#x30ED;&#x30B0;&#x30A4;&#x30F3;&#x3055;&#x308C;&#x308B;&#x53EF;&#x80FD;&#x6027;&#x3092;&#x5C11;&#x306A;&#x304F;&#x3055;&#x305B;&#x308B;)</p>
+<ul>
+<li>&#x4ECA;&#x56DE;&#x306F;&#x958B;&#x767A;&#x624B;&#x9806;&#x3092;&#x6B8B;&#x3059;&#x305F;&#x3081;&#x306B; IP &#x3092;<code>0.0.0.0/0</code>&#x3068;&#x3057;&#x3066;&#x3082;&#x826F;&#x3044;
+&#x30EB;&#x30FC;&#x30EB;&#x306E;&#x8FFD;&#x52A0;&#x304B;&#x3089; HTTP &#x3067; port80 &#x756A;&#x3067;&#x53D7;&#x3051;&#x308B;&#x3088;&#x3046;&#x306B;&#x3059;&#x308B;</li>
+</ul>
+</li>
+<li>&#x203B;HTTP &#x306E; IP &#x30AB;&#x30B9;&#x30BF;&#x30E0;&#x3067;<code>&#x30ED;&#x30FC;&#x30C9;&#x30D0;&#x30E9;&#x30F3;&#x30B5;&#x30FC;&#x306E;&#x4F5C;&#x6210;&#x306E;&#x6642;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;&#x30B0;&#x30EB;&#x30FC;&#x30D7;</code>&#x3092;&#x9078;&#x629E;&#x3057;&#x3001;&#x30AB;&#x30F3;&#x30DE;&#x3067; SSHIP &#x3067;&#x8FFD;&#x52A0;&#x3057;&#x305F; IP &#x3082;&#x8FFD;&#x52A0;&#x3059;&#x308B;</li>
+</ul>
+<p><img src="LB/ec205.png" width="600px"><br></p>
+<ul>
+<li>&#x30B9;&#x30C6;&#x30C3;&#x30D7; 7 &#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x4F5C;&#x6210;&#x306E;&#x78BA;&#x8A8D;&#x306E;&#x5F8C;&#x306B;&#x4F5C;&#x6210;&#x3067;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</li>
+</ul>
+<h1 id="7-ec2-&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x5FC5;&#x8981;&#x306A;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;"><a name="7-ec2-&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x5FC5;&#x8981;&#x306A;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;" class="plugin-anchor" href="#7-ec2-&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x5FC5;&#x8981;&#x306A;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;"><i class="fa fa-link" aria-hidden="true"></i></a>7. EC2 &#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x5FC5;&#x8981;&#x306A;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</h1>
+<ul>
+<li>ssh &#x3067;&#x30ED;&#x30B0;&#x30A4;&#x30F3;&#x3059;&#x308B;</li>
+</ul>
+<pre><code>ssh -i ~/.ssh/xxxxxx.pem ec2-user@xx.xxx.xx.xxx
+</code></pre><ul>
+<li>nginx &#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3059;&#x308B;</li>
+</ul>
+<pre><code>//  &#x5229;&#x7528;&#x53EF;&#x80FD;&#x306A;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x3092;&#x78BA;&#x8A8D;&#x3059;&#x308B;
+$ amazon-linux-extras
+.
+37  mono                     available    [ =5.x  =stable ]
+38  nginx1                   available    [ =stable ]
+39  ruby2.6                  available    [ =2.6  =stable ]
+.
+.
+// nginx &#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3; 1 &#x304C;&#x5229;&#x7528;&#x3067;&#x304D;&#x308B;&#x306E;&#x3067; &#x305D;&#x308C;&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3059;&#x308B;
+$ sudo amazon-linux-extras install -y nginx1
+</code></pre><ul>
+<li>nginx &#x306E;&#x8D77;&#x52D5;</li>
+</ul>
+<pre><code>$ sudo systemctl start nginx
+</code></pre><ul>
+<li>nginx &#x304C;&#x8D77;&#x52D5;&#x3057;&#x3066;&#x3044;&#x308B;&#x304B;&#x78BA;&#x8A8D;
+Active &#x306E;&#x6B04;&#x304C; <code>active (running)</code> &#x306B;&#x306A;&#x3063;&#x3066;&#x3044;&#x308C;&#x3070;&#x8D77;&#x52D5;&#x3057;&#x3066;&#x3044;&#x308B;</li>
+</ul>
+<pre><code>$ sudo systemctl status nginx
+.
+Active: active (running) since &#x6C34; 2020-11-11 14:45:10 UTC; 17s ago
+.
+.
+</code></pre><ul>
+<li>&#x30B5;&#x30FC;&#x30D0;&#x3092;&#x518D;&#x8D77;&#x52D5;&#x6642;&#x306B; nginx &#x304C;&#x81EA;&#x52D5;&#x3067;&#x8D77;&#x52D5;&#x3059;&#x308B;&#x3088;&#x3046;&#x306B;&#x3059;&#x308B;</li>
+</ul>
+<pre><code>$ sudo systemctl enable nginx
+</code></pre><ul>
+<li>&#x30ED;&#x30FC;&#x30C9;&#x30D0;&#x30E9;&#x30F3;&#x30B5;&#x30FC;&#x3067;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x304C;&#x4E8C;&#x3064;&#x5207;&#x308A;&#x66FF;&#x308F;&#x3063;&#x3066;&#x3044;&#x308B;&#x304B;&#x308F;&#x304B;&#x308B;&#x3088;&#x3046;&#x306B; HTML &#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x5909;&#x66F4;&#x3057;&#x3066;&#x3044;&#x304F;</li>
+</ul>
+<pre><code>$ sudo vim /usr/share/nginx/html/index.html
+</code></pre><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;&#x30C6;&#x30B9;&#x30C8;01&#x306E;&#x30BF;&#x30A4;&#x30C8;&#x30EB;&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;&#x30C6;&#x30B9;&#x30C8;01&#x306E;&#x753B;&#x9762;&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h1 id="8-2-&#x3064;&#x76EE;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;"><a name="8-2-&#x3064;&#x76EE;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;" class="plugin-anchor" href="#8-2-&#x3064;&#x76EE;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;"><i class="fa fa-link" aria-hidden="true"></i></a>8. 2 &#x3064;&#x76EE;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</h1>
+<ul>
+<li>&#xFF17;, 8 &#x3067;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E; AMI &#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;</li>
+</ul>
+<h2 id="&#xFF12;&#x3064;&#x76EE;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x4F5C;&#x6210;"><a name="&#xFF12;&#x3064;&#x76EE;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x4F5C;&#x6210;" class="plugin-anchor" href="#&#xFF12;&#x3064;&#x76EE;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x4F5C;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF12;&#x3064;&#x76EE;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x4F5C;&#x6210;</h2>
+<ul>
+<li>&#x540C;&#x69D8;&#x306E;&#x3082;&#x306E;&#x3092;&#x8D77;&#x52D5; &#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x304B;&#x3089;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x3044;&#x304F;</li>
+</ul>
+<p><img src="LB/ec206.png" width="600px"><br></p>
+<h2 id="&#x30B9;&#x30C6;&#x30C3;&#x30D7;-1-&#x306E;-amazon-&#x30DE;&#x30B7;&#x30F3;&#x30A4;&#x30E1;&#x30FC;&#x30B8;-ami"><a name="&#x30B9;&#x30C6;&#x30C3;&#x30D7;-1-&#x306E;-amazon-&#x30DE;&#x30B7;&#x30F3;&#x30A4;&#x30E1;&#x30FC;&#x30B8;-ami" class="plugin-anchor" href="#&#x30B9;&#x30C6;&#x30C3;&#x30D7;-1-&#x306E;-amazon-&#x30DE;&#x30B7;&#x30F3;&#x30A4;&#x30E1;&#x30FC;&#x30B8;-ami"><i class="fa fa-link" aria-hidden="true"></i></a>&#x30B9;&#x30C6;&#x30C3;&#x30D7; 1 &#x306E; Amazon &#x30DE;&#x30B7;&#x30F3;&#x30A4;&#x30E1;&#x30FC;&#x30B8; (AMI)</h2>
+<ul>
+<li>9 &#x306E;&#x5148;&#x982D;&#x3067;&#x4F5C;&#x6210;&#x3057;&#x305F; AMI &#x3092;&#x9078;&#x629E;&#x3059;&#x308B;</li>
+</ul>
+<h2 id="&#x30B9;&#x30C6;&#x30C3;&#x30D7;-3-&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x8A73;&#x7D30;&#x306E;&#x8A2D;&#x5B9A;"><a name="&#x30B9;&#x30C6;&#x30C3;&#x30D7;-3-&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x8A73;&#x7D30;&#x306E;&#x8A2D;&#x5B9A;" class="plugin-anchor" href="#&#x30B9;&#x30C6;&#x30C3;&#x30D7;-3-&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x8A73;&#x7D30;&#x306E;&#x8A2D;&#x5B9A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x30B9;&#x30C6;&#x30C3;&#x30D7; 3 &#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x8A73;&#x7D30;&#x306E;&#x8A2D;&#x5B9A;</h2>
+<ul>
+<li>&#x30B5;&#x30D6;&#x30CD;&#x30C3;&#x30C8;&#x306E;&#x30BF;&#x30A4;&#x30D7;&#x3092; testsub-pub02 &#x306B;&#x3059;&#x308B;</li>
+</ul>
+<h2 id="7-&#x3067;&#x8A2D;&#x5B9A;&#x3057;&#x305F;&#x9805;&#x76EE;&#x306E;-html-&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x30C6;&#x30B9;&#x30C8;&#xFF12;&#x306E;&#x30BF;&#x30A4;&#x30C8;&#x30EB;&#x306B;&#x5909;&#x66F4;&#x3059;&#x308B;"><a name="7-&#x3067;&#x8A2D;&#x5B9A;&#x3057;&#x305F;&#x9805;&#x76EE;&#x306E;-html-&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x30C6;&#x30B9;&#x30C8;&#xFF12;&#x306E;&#x30BF;&#x30A4;&#x30C8;&#x30EB;&#x306B;&#x5909;&#x66F4;&#x3059;&#x308B;" class="plugin-anchor" href="#7-&#x3067;&#x8A2D;&#x5B9A;&#x3057;&#x305F;&#x9805;&#x76EE;&#x306E;-html-&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x30C6;&#x30B9;&#x30C8;&#xFF12;&#x306E;&#x30BF;&#x30A4;&#x30C8;&#x30EB;&#x306B;&#x5909;&#x66F4;&#x3059;&#x308B;"><i class="fa fa-link" aria-hidden="true"></i></a>7 &#x3067;&#x8A2D;&#x5B9A;&#x3057;&#x305F;&#x9805;&#x76EE;&#x306E; HTML &#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x30C6;&#x30B9;&#x30C8;&#xFF12;&#x306E;&#x30BF;&#x30A4;&#x30C8;&#x30EB;&#x306B;&#x5909;&#x66F4;&#x3059;&#x308B;</h2>
+<ul>
+<li>&#x203B;&#x4ECA;&#x56DE;&#x306F;&#x5207;&#x308A;&#x66FF;&#x308F;&#x3063;&#x3066;&#x3044;&#x308B;&#x304B;&#x3069;&#x3046;&#x304B;&#x3092;&#x308F;&#x304B;&#x308A;&#x3084;&#x3059;&#x304F;&#x3059;&#x308B;&#x305F;&#x3081;&#x306B;&#x8A2D;&#x5B9A;&#x3059;&#x308B;</li>
+</ul>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;&#x30C6;&#x30B9;&#x30C8;02&#x306E;&#x30BF;&#x30A4;&#x30C8;&#x30EB;&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;&#x30C6;&#x30B9;&#x30C8;02&#x306E;&#x753B;&#x9762;&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h1 id="9-&#x30BF;&#x30FC;&#x30B2;&#x30C3;&#x30C8;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x306B;&#xFF12;&#x53F0;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x3066;&#x3044;&#x304F;"><a name="9-&#x30BF;&#x30FC;&#x30B2;&#x30C3;&#x30C8;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x306B;&#xFF12;&#x53F0;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x3066;&#x3044;&#x304F;" class="plugin-anchor" href="#9-&#x30BF;&#x30FC;&#x30B2;&#x30C3;&#x30C8;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x306B;&#xFF12;&#x53F0;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x3066;&#x3044;&#x304F;"><i class="fa fa-link" aria-hidden="true"></i></a>9. &#x30BF;&#x30FC;&#x30B2;&#x30C3;&#x30C8;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x306B;&#xFF12;&#x53F0;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x3066;&#x3044;&#x304F;</h1>
+<ul>
+<li><p>&#x30BF;&#x30FC;&#x30B2;&#x30C3;&#x30C8;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;</p>
+<p><img src="LB/tg01.png" width="600px"><br></p>
+</li>
+<li><p>Target &#x304B;&#x3089; EC2 &#x3092;&#x8FFD;&#x52A0;&#x3059;&#x308B;</p>
+<p><img src="LB/tg02.png" width="600px"><br></p>
+</li>
+<li><p>&#x5148;&#x7A0B;&#x8FFD;&#x52A0;&#x3057;&#x305F; 2 &#x3064;&#x306E; EC2 &#x3092;&#x9078;&#x629E;&#x3059;&#x308B;</p>
+<p><img src="LB/tg03.png" width="600px"><br></p>
+</li>
+</ul>
+<h1 id="&#x53C2;&#x8003;&#x306B;&#x3057;&#x305F;&#x30B5;&#x30A4;&#x30C8;"><a name="&#x53C2;&#x8003;&#x306B;&#x3057;&#x305F;&#x30B5;&#x30A4;&#x30C8;" class="plugin-anchor" href="#&#x53C2;&#x8003;&#x306B;&#x3057;&#x305F;&#x30B5;&#x30A4;&#x30C8;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x8003;&#x306B;&#x3057;&#x305F;&#x30B5;&#x30A4;&#x30C8;</h1>
+<ul>
+<li><a href="https://dx.nissho-ele.co.jp/blog/aws-beginner-ec2-elb_20190410.html" target="_blank">AWS ELB &#x3067; Web &#x30B5;&#x30FC;&#x30D0;&#x306E;&#x8CA0;&#x8377;&#x5206;&#x6563;&#x3092;&#x5B9F;&#x73FE;!</a> (&#x4E00;&#x6C17;&#x306B;&#xFF12;&#x3064;&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x3092;&#x4F5C;&#x6210;&#x3082;&#x8A18;&#x8F09;)</li>
+</ul>
 
                                 
                                 </section>
@@ -233,7 +505,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"AWS LB","level":"1.2.2","depth":2,"previous":{"title":"AWS Route53","level":"1.2.1","depth":2,"path":"AWS/Route53.md","ref":"./AWS/Route53.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","theme-api","copy-code-button","anchors","collapsible-chapters","hide-published-with"],"root":"./books","styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"collapsible-chapters":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"light"},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook Tutorial","language":"ja","gitbook":"*","description":"This is a gitbook example"},"file":{"path":"AWS/LB.md","mtime":"2020-10-26T09:00:28.193Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-26T09:05:25.855Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"AWS LB","level":"1.2.2","depth":2,"previous":{"title":"AWS Route53","level":"1.2.1","depth":2,"path":"AWS/Route53.md","ref":"./AWS/Route53.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","theme-api","copy-code-button","anchors","collapsible-chapters","hide-published-with","livereload"],"root":"./books","styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"search":{},"collapsible-chapters":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-api":{"languages":[],"split":true,"theme":"light"},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook Tutorial","language":"ja","gitbook":"*","description":"This is a gitbook example"},"file":{"path":"AWS/LB.md","mtime":"2020-11-26T14:59:23.914Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-26T14:59:35.439Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -252,6 +524,10 @@
     
         
         <script src="../gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

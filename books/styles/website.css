@@ -15,7 +15,7 @@
 .markdown-section h5 {
   font-family: "Roboto Slab", "Noto Sans JP", sans-serif;
   font-weight: bold;
-  color: rgb(0,113,188);
+  color: rgb(0, 113, 188);
 }
 
 .markdown-section h1 {
@@ -32,5 +32,9 @@
 }
 
 .book-header .btn.lang-switcher.active {
-  display: none!important;
+  display: none !important;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal {
+  margin: 0 0 150px !important;
 }

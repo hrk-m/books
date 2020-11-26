@@ -309,3 +309,7 @@ $ sudo vim /usr/share/nginx/html/index.html
 - 先程追加した 2 つの EC2 を選択する
 
   <img src='LB/tg03.png' width='600px'><br />
+
+# 参考にしたサイト
+
+- [AWS ELB で Web サーバの負荷分散を実現!](https://dx.nissho-ele.co.jp/blog/aws-beginner-ec2-elb_20190410.html) (一気に２つのインスタンスを作成も記載)

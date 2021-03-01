@@ -1,0 +1,34 @@
+# テンプレートのバージョン追加
+AWSTemplateFormatVersion: "2010-09-09"
+# 説明
+Description: Create EC2 Instance
+# resourceで使いたい共通のパラメーターを参照するときに記述
+Parameters:
+  # ec2 インスタンスで使う変数のようなもの
+  InstanceType:
+    Description: WebServer EC2 instance type
+    Type: String
+    Default: t2.micro
+    # Defaultの選択値を宣言するGUIの時に選択肢に出てくる
+    AllowedValues:
+    - t1.micro
+    - t2.nano
+    - t2.micro
+    - t2.small
+    - t2.medium
+    - t2.large
+    # 制約内容の説明L13のAllowedValuesで選択させるようにするための説明
+    ConstraintDescription: must be a valid EC2 instance type
+
+Resources:
+  # インスタンスを作成するための名前(好きな名前でOK)
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      # EC2インスタンスのami (ec2 インスタンス　→　ami ID)
+      ImageId: ami-0792756bc9edf3e63
+      InstanceType: !Ref InstanceType
+      # ec2 インスタンスのタグ
+      Tags:
+      - Key: Name
+        Value: myInstance

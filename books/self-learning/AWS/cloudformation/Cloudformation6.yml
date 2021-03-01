@@ -1,0 +1,103 @@
+# key ペアを設定してログインできるようにする
+# ssh 接続可能にするための設定
+# サブネット、インスタンス
+
+# テンプレートのバージョン指定
+AWSTemplateFormatVersion: "2010-09-09"
+# 説明
+Description: Create EC2 Instance
+# Resources で使いたい共通のパラメーターを参照するときに記述
+Parameters:
+  InstanceType:
+    Description: WebServer EC2 instance type
+    Type: String
+    Default: t2.micro
+    AllowedValues:
+    - t1.micro
+    - t2.nano
+    - t2.micro
+    - t2.small
+    - t2.medium
+    - t2.large
+    ConstraintDescription: must be a valid EC2 instance type
+  # サブネットの設定
+  # AWS vpc -> サブネット
+  SubnetId:
+    Type: String
+    Default: subnet-0117a6d55e691c6b2
+    # GUIから選択できるリスト一覧
+    AllowedValues:
+    - subnet-0117a6d55e691c6b2
+    - subnet-0e513fb9e4419d71d
+    - subnet-08300ea23ab36c090
+    - subnet-0c06af66a463c50f1
+    ConstraintDescription: must be a valid SbunetID
+  # key 名を設定する
+  KeyName:
+    Description : Name of an existing EC2 KeyPair.
+    Type: AWS::EC2::KeyPair::KeyName
+    ConstraintDescription : Can contain only ASCII characters.
+  SSHLocation:
+    Description: IP address range that can be used to SSH to the EC2 instances
+    Type: String
+    MinLength: '9'
+    MaxLength: '18'
+    # ssh の接続範囲のIPを設定（オープンなIP）
+    Default: 0.0.0.0/0
+    # 1けたから３桁までの入力可能にするをパターンかさせる
+    AllowedPattern: (\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})/(\d{1,2})
+    ConstraintDescription: must be a valid IP CIDR range of the form x.x.x.x/x.
+
+# 複数のリージョンからami を選べるようにする
+Mappings:
+  RegionMap:
+    # 東京
+    ap-northeast-1:
+      hvm: "ami-0792756bc9edf3e63"
+    # シンガポール
+    ap-southeast-1:
+      hvm: "ami-0162da29310cc18f6"
+
+
+Description: Create EC2 Instance
+Resources:
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      # FindInMap関数でリージョン別に呼び出す
+      # AWS::Region が東京か、シンガポールかを選択させる
+      ImageId: !FindInMap [RegionMap, !Ref 'AWS::Region', hvm]
+      InstanceType: !Ref InstanceType
+      SubnetId: !Ref SubnetId
+      BlockDeviceMappings:
+        # ルートデバイス用の EBS ボリューム
+        # https://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/ebs-using-volumes.html
+        - DeviceName: /dev/xvda
+          # https://aws.amazon.com/jp/ebs/features/
+          Ebs:
+            # 汎用SSD
+            VolumeType: gp2
+            # デフォルトで設定されている 8
+            VolumeSize: 8
+      Tags:
+      - Key: Name
+        Value: myInstance
+      KeyName: !Ref KeyName
+      SecurityGroupIds:
+        # GetAtt で新たに作成されたセキュリティグループIDを取得する
+         - !GetAtt "InstanceSecurityGroup.GroupId"
+
+  InstanceSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: connect with ssh
+      VpcId: vpc-04c778667e18011db
+      SecurityGroupIngress:
+        -
+          IpProtocol: tcp
+          # インバウンド
+          FromPort: 22
+          # アウトバウンド
+          ToPort: 22
+          CidrIp: !Ref SSHLocation
+

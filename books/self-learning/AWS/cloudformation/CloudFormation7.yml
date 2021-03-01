@@ -1,0 +1,168 @@
+# 1. VPCを作成する
+# 2. パブリックサブネットとプライベートサブネット２つずつ作成する
+# 3. ルートテーブルを作成して、VPCとサブネットにアタッチする
+# 4. インターネットゲートウェイを作成してVPCにアタッチする
+# 5. アウトプットフィールドに出力値を設定する
+# [VPC構築編](https://recipe.kc-cloud.jp/archives/11819)
+# [ルートテーブルシナリオの実際の構築手順](https://bcblog.sios.jp/construction-procedure-of-routetablescenario-aws/)
+# [CIDR設定について](https://qiita.com/daikissdd/items/101679f19de246f22df4)
+
+AWSTemplateFormatVersion: '2010-09-09'
+Description:
+  VPC & subnet create
+
+Resources:
+  MyFirstVPC:
+    # ec2 内にあるVPCとなるため
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 10.0.0.0/16
+      EnableDnsSupport: 'true'
+      EnableDnsHostnames: 'true'
+      InstanceTenancy: default
+      Tags:
+      - Key: Name
+        Value: CloudFormation-VPC
+  # サブネット内にあるインスタンス等がどこに通信にいくかのルールを定めたもの
+  # [ルートテーブル](https://docs.aws.amazon.com/ja_jp/vpc/latest/userguide/VPC_Route_Tables.html)
+  PublicRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref MyFirstVPC
+      Tags:
+      - Key: Name
+        Value: CloudFormation-VPC-PublicRT
+
+  PrivateRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref MyFirstVPC
+      Tags:
+      - Key: Name
+        Value: CloudFormation-VPC-PrivateRT
+
+#################################
+# publick (サブネット、VPC)
+  PublicSubnet1A:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref MyFirstVPC
+      CidrBlock: 10.0.0.0/24
+      AvailabilityZone: "ap-northeast-1a"
+      Tags:
+      - Key: Name
+        Value: CloudFormation-public-subnet-1a
+
+  PubSubnet1ARouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PublicSubnet1A
+      RouteTableId: !Ref PublicRouteTable # アタッチされる
+
+  PublicSubnet1C:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref MyFirstVPC
+      CidrBlock: 10.0.2.0/24
+      AvailabilityZone: "ap-northeast-1c"
+      Tags:
+      - Key: Name
+        Value: CloudFormation-public-subnet-1c
+
+  PubSubnet1CRouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PublicSubnet1C
+      RouteTableId: !Ref PublicRouteTable
+
+#################################
+# private (サブネット、VPC)
+  PrivateSubnet1A:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref MyFirstVPC
+      CidrBlock: 10.0.1.0/24
+      AvailabilityZone: "ap-northeast-1a"
+      Tags:
+      - Key: Name
+        Value: CloudFormation-private-subnet-1a
+
+  PriSubnet1ARouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PrivateSubnet1A
+      RouteTableId: !Ref PrivateRouteTable
+
+  PrivateSubnet1C:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref MyFirstVPC
+      CidrBlock: 10.0.3.0/24
+      AvailabilityZone: "ap-northeast-1c"
+      Tags:
+      - Key: Name
+        Value: CloudFormation-private-subnet-1c
+
+  PriSubnet1CRouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PrivateSubnet1C
+      RouteTableId: !Ref PrivateRouteTable
+
+
+#################################
+  # インターネットゲートウェイ
+  # インターネットと通信することをRoute Tableに許可する
+  # VPCにアタッチして、Route Tableに紐づける
+  myInternetGateway:
+    Type: "AWS::EC2::InternetGateway"
+    Properties:
+      Tags:
+      - Key: Name
+        Value: CloudFormation-ING
+  AttachGateway:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties:
+      VpcId: !Ref MyFirstVPC
+      InternetGatewayId: !Ref myInternetGateway # ゲートウェイをアタッチする
+  # 以下を追加することでpublick化する
+  myRoute:
+    Type: AWS::EC2::Route
+    DependsOn: myInternetGateway
+    Properties:
+      RouteTableId: !Ref PublicRouteTable
+      DestinationCidrBlock: 0.0.0.0/0
+      GatewayId: !Ref myInternetGateway
+
+# cloudformation のエクスポートに値を出力できる
+Outputs:
+  StackVPC:
+    Description: The ID of the VPC
+    Value: !Ref MyFirstVPC
+    Export:
+      Name: !Sub "${AWS::StackName}-VPCID"
+
+  StackPublicSubnet1A:
+    Description: The ID of the VPC Subnet
+    Value: !Ref PublicSubnet1A
+    Export:
+      Name: !Sub "${AWS::StackName}-PublicSubnet1A"
+
+  StackPublicSubnet1C:
+    Description: The ID of the VPC Subnet
+    Value: !Ref PublicSubnet1C
+    Export:
+      Name: !Sub "${AWS::StackName}-PublicSubnet1C"
+
+  StackPrivateSubnet1A:
+    Description: The ID of the VPC Subnet
+    Value: !Ref PrivateSubnet1A
+    Export:
+      Name: !Sub "${AWS::StackName}-PrivateSubnet1A"
+
+  StackPrivateSubnet1C:
+    Description: The ID of the VPC Subnet
+    Value: !Ref PrivateSubnet1C
+    Export:
+      Name: !Sub "${AWS::StackName}-PrivateSubnet1C"
+
